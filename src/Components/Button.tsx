@@ -1,9 +1,13 @@
 import React from 'react';
 
- export const Button = () => {
+type ButtonType = {
+    name: string
+}
+
+ export const Button = (props:ButtonType) => {
     return (
         <div>
-            <button>MyYouTubeChannel-1</button>
+            <button>{props.name}</button>
         </div>
     );
 };

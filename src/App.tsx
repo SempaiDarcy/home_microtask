@@ -4,8 +4,8 @@ import {Button} from "./Components/Button";
 function App() {
   return (
     <div className="App">
-        <Button/>
-        <button>MyYouTubeChannel-2</button>
+        <Button name={'MyYouTubeChannel-1'}/>
+        <Button name={'MyYouTubeChannel-12'} />
     </div>
   );
 }
