@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+
 // import {Button} from "./Components/Button";
 
 function App() {
@@ -20,9 +21,32 @@ function App() {
     // const onclickHandler2= () =>{
     //     setA(0);
     // }
+    const [money, setMoney] = useState([
+        {banknots: 'Dollars', value: 100, number: ' a1234567890'},
+        {banknots: 'Dollars', value: 50, number: ' z1234567890'},
+        {banknots: 'RUBLS', value: 100, number: ' w1234567890'},
+        {banknots: 'Dollars', value: 100, number: ' e1234567890'},
+        {banknots: 'Dollars', value: 50, number: ' c1234567890'},
+        {banknots: 'RUBLS', value: 100, number: ' r1234567890'},
+        {banknots: 'Dollars', value: 50, number: ' x1234567890'},
+        {banknots: 'RUBLS', value: 50, number: ' v1234567890'},
+    ])
     return (
         <div className="App">
+            <ul>
+                {money.map((objFromMonArr,index) => {
+                    return (
 
+                        <li key={index}>
+                            <span> {objFromMonArr.banknots}</span>
+                            <span> {objFromMonArr.value}</span>
+                            <span> {objFromMonArr.number}</span>
+                        </li>
+
+                )
+                })
+                }
+            </ul>
             {/*<h1>{a}</h1>*/}
             {/*<button onClick={onclickHandler}>number</button>*/}
             {/*<button onClick={onclickHandler2}>0</button>*/}
