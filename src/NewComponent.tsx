@@ -15,7 +15,6 @@ const NewComponent = (props:NewComponentType) => {
         <div>
             <ul>
                 {props.topCars.map((objectFromCarsArray,index)=>{
-                    debugger
                     return (
                         <table>
                             <tr key={index}>

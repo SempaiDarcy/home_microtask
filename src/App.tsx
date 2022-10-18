@@ -8,11 +8,16 @@ function App() {
         {manufacturer:'Mercedes', model:'e63s'},
         {manufacturer:'Audi', model:'rs6'}
     ]
+
+    const MyFirstSubscriber = ()=>{
+        console.log('Hello')
+    }
+
   return (
     <div>
         <NewComponent topCars={topCars}/>
         <button onClick={(event)=>{console.log('Hellow')}}>MyYouTubeChannel-1</button>
-        <button onClick={(event)=>{console.log('Hello')}}>MyYouTubeChannel-2</button>
+        <button onClick={MyFirstSubscriber}>MyYouTubeChannel-2</button>
     </div>
   );
 }
