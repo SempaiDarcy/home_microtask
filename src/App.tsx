@@ -31,10 +31,13 @@ function App() {
         {banknots: 'Dollars', value: 50, number: ' x1234567890'},
         {banknots: 'RUBLS', value: 50, number: ' v1234567890'},
     ])
+
+    let currentMoney=money.filter((filteredMoney)=>filteredMoney.banknots==='Dollars')
+
     return (
         <div className="App">
             <ul>
-                {money.map((objFromMonArr,index) => {
+                {currentMoney.map((objFromMonArr,index) => {
                     return (
 
                         <li key={index}>
@@ -47,6 +50,11 @@ function App() {
                 })
                 }
             </ul>
+            <div style={{marginLeft:'35px'}}>
+                <button onClick={oncklickFilterHandler}>all</button>
+                <button onClick={oncklickFilterHandler}>rubles</button>
+                <button onClick={oncklickFilterHandler}>dollars</button>
+            </div>
             {/*<h1>{a}</h1>*/}
             {/*<button onClick={onclickHandler}>number</button>*/}
             {/*<button onClick={onclickHandler2}>0</button>*/}
