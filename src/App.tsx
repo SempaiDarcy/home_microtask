@@ -1,15 +1,12 @@
 import React from 'react';
 import './App.css';
-import {Header} from "./site/Header";
-import {Body} from "./site/Body";
-import {Footer} from "./site/Footer";
+import {NewComponent} from "./components/NewComponent";
+
 
 function App() {
     return (
         <>
-            <Header title={'NEW BODY'}/>
-            <Body/>
-            <Footer/>
+            <NewComponent/>
         </>
     )
 }
