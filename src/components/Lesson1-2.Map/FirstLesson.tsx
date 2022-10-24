@@ -37,7 +37,7 @@ const FirstLesson = () => {
             <div >
                 {/*<Cars carsTop={topCars}/>*/}
                 {/*<Students students={students}/>*/}
-                <Build materials = {Products}/>
+                {/*<Build materials = {Products}/>*/}
             </div>
         
     );
