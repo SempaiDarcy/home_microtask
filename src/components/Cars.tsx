@@ -12,7 +12,7 @@ type CarsType = {
 
 export const Cars = (props:NewComponentType) => {
     return (
-        <th>
+        <div>
             {props.carsTop.map((o,index) => {
                 return (
                     <tr key={index}>
@@ -24,7 +24,7 @@ export const Cars = (props:NewComponentType) => {
                 }
             )
             }
-        </th>
+        </div>
     );
 };
 
