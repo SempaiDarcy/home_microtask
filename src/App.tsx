@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import {NewComponent} from "./components/NewComponent";
+import {Cars} from "./components/Cars";
+import {Girls} from "./components/Girls";
 
 
 
@@ -19,7 +20,8 @@ const topGirls = [
 function App() {
     return (
         <>
-            <NewComponent carsTop={topCars}/>
+            <Cars carsTop={topCars}/>
+            <Girls girls={topGirls}/>
         </>
     )
 }

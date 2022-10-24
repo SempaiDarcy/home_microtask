@@ -10,15 +10,15 @@ type CarsType = {
 }
 
 
-export const NewComponent = (props:NewComponentType) => {
+export const Cars = (props:NewComponentType) => {
     return (
         <th>
             {props.carsTop.map((o,index) => {
                 return (
                     <tr key={index}>
-                        <span>Индекс: {index} ;</span>
-                        <span> Name: {o.manufacturer} ;</span>
-                        <span> Model: {o.model} ;</span>
+                        <span>Индекс: {index};</span>
+                        <span>Name: {o.manufacturer};</span>
+                        <span>Model: {o.model};</span>
                     </tr>
                 )
                 }
