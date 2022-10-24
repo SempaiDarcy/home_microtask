@@ -1,7 +1,7 @@
 import React from 'react';
 
 type NewComponentType = {
-    carsTop: Array<CarsType>
+    carsTop: CarsType[]
 }
 
 type CarsType = {
