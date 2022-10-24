@@ -1,7 +1,14 @@
 import React from 'react';
 import {Cars} from "./Cars";
 import Students from "./Students";
+import {Build} from "./Build";
 
+
+const Products = [
+    {id:1,name:'Кирпич' ,mass:0.5},
+    {id:2,name:'Песок' ,mass:1},
+    {id:3,name:'Клей' ,mass:0.3}
+]
 const students = [
     {id: 1, name: "James", age: 8},
     {id: 2, name: "Robert", age: 18},
@@ -28,8 +35,9 @@ const topCars = [
 const FirstLesson = () => {
     return (
             <div >
-                <Cars carsTop={topCars}/>
-                <Students students={students}/>
+                {/*<Cars carsTop={topCars}/>*/}
+                {/*<Students students={students}/>*/}
+                <Build materials = {Products}/>
             </div>
         
     );
