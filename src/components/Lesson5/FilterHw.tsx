@@ -31,7 +31,7 @@ const FilterHw = () => {
     }
     return (
         <div>
-            {money.map((objFromMoney,index)=>{
+            {currentMoney.map((objFromMoney,index)=>{
                 return (
                     <ul key={index}>
                         <span>{objFromMoney.banknots} </span>
