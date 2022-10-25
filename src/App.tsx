@@ -1,17 +1,16 @@
 import React,{MouseEvent} from 'react';
 import './App.css';
-
 function App() {
-    const onClickHandler =(name:string) => {
-        console.log(name)
-    }
 
+    let a = 1;
+    const oncClickHandler =() => {
+        ++a
+        console.log(a)
+    }
     return (
         <div className='App'>
-            {/*<Foo/>*/}
-            <button onClick={(event)=>onClickHandler('VASYA')}>MyYouTubeChanel-1</button>
-            <button onClick={(event)=>onClickHandler('IVAN')}>MyYouTubeChanel-2</button>
-
+            <h1>{a}</h1>
+            <button onClick={oncClickHandler}>number</button>
         </div>
     )
 }
