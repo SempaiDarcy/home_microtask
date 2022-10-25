@@ -17,6 +17,7 @@ function App() {
             {/*<button onClick={(event) => {console.log('Hello')}}>MyYouTubeChanel-1</button>*/}
             <button onClick={(event)=>onClickHandler('VASYA')}>MyYouTubeChanel-1</button>
             <button onClick={(event)=>onClickHandler('IVAN')}>MyYouTubeChanel-2</button>
+            <button onClick={()=>onClickHandler('some info')}>MyYouTubeChanel-2</button>
         </div>
     )
 }
