@@ -10,12 +10,10 @@ function App() {
         {message:'message4'}
     ])
 
-    const addMessage =()=>{
-        console.log()
-    }
+
  return (
      <div className={'App'}>
-         <FullInput  addMessage={addMessage}/>
+         <FullInput  />
          {message.map((el,index)=>{
              return (
                  <div key={index}>{el.message}</div>
