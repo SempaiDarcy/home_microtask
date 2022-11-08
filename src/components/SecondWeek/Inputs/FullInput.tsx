@@ -25,5 +25,6 @@ export const FullInput = (props:FullInputPropsType) => {
             <button onClick={onClickButtonHandler}>+</button>
         </div>
     );
+
 };
 
